@@ -1,22 +1,27 @@
 {
   "name": "@shotamatsuda/rollup-plugin-nullify",
   "version": "0.0.1",
+  "license": "MIT",
   "description": "",
   "repository": "shotamatsuda/rollup-plugin-nullify",
-  "main": "./index.js",
-  "author": "Shota Matsuda",
-  "license": "MIT",
+  "bugs": "https://github.com/shotamatsuda/rollup-plugin-nullify/issues",
   "homepage": "https://github.com/shotamatsuda/rollup-plugin-nullify",
+  "author": {
+    "name": "Shota Matsuda",
+    "email": "shota@takram.com"
+  },
+  "main": "index.js",
+  "module": "index.module.js",
   "files": [
     "package.json",
     "README.md",
     "index.js",
-    "src"
+    "index.module.js"
   ],
   "scripts": {
     "build": "rollup -c",
-    "lint": "standard -v src/index.js test/test.js rollup.config.js",
-    "lint-fix": "standard -v --fix src/index.js test/test.js rollup.config.js",
+    "lint": "standard -v index.module.js test/test.js rollup.config.js",
+    "lint-fix": "standard -v --fix index.module.js test/test.js rollup.config.js",
     "pretest": "npm run build",
     "test": "mocha"
   },
