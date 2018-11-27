@@ -1,14 +1,14 @@
-// The MIT License
+// MIT License
 // Copyright (C) 2016-Present Shota Matsuda
 
 import babel from 'rollup-plugin-babel'
 
 export default {
-  input: 'src/index.js',
+  input: 'index.module.js',
   plugins: [
     babel({
       presets: [
-        ['env', {
+        ['@babel/env', {
           targets: { node: 'current' },
           modules: false
         }]

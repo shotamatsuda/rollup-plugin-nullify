@@ -1,35 +1,40 @@
 {
   "name": "@shotamatsuda/rollup-plugin-nullify",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "license": "MIT",
   "description": "",
   "repository": "shotamatsuda/rollup-plugin-nullify",
-  "main": "./index.js",
-  "author": "Shota Matsuda",
-  "license": "MIT",
+  "bugs": "https://github.com/shotamatsuda/rollup-plugin-nullify/issues",
   "homepage": "https://github.com/shotamatsuda/rollup-plugin-nullify",
+  "author": {
+    "name": "Shota Matsuda",
+    "email": "shota@takram.com"
+  },
+  "main": "index.js",
+  "module": "index.module.js",
   "files": [
     "package.json",
     "README.md",
     "index.js",
-    "src"
+    "index.module.js"
   ],
   "scripts": {
     "build": "rollup -c",
-    "lint": "standard -v src/index.js test/test.js rollup.config.js",
-    "lint-fix": "standard -v --fix src/index.js test/test.js rollup.config.js",
+    "lint": "standard -v index.module.js test/test.js rollup.config.js",
+    "lint-fix": "standard -v --fix index.module.js test/test.js rollup.config.js",
     "pretest": "npm run build",
     "test": "mocha"
   },
   "dependencies": {},
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.6.1",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
     "chai": "^4.1.2",
-    "eslint": "^4.19.1",
+    "eslint": "^5.9.0",
     "mocha": "^5.1.1",
-    "rollup": "^0.58.2",
-    "rollup-plugin-babel": "^3.0.4",
+    "rollup": "^0.67.3",
+    "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-buble": "^0.19.2",
-    "standard": "^11.0.1"
+    "standard": "^12.0.1"
   }
 }

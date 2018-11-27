@@ -1,4 +1,4 @@
-// The MIT License
+// MIT License
 // Copyright (C) 2018-Present Shota Matsuda
 
 export default function nullify (modules) {
