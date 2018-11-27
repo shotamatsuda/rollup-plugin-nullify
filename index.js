@@ -1,14 +1,14 @@
 'use strict';
 
-// The MIT License
+// MIT License
 // Copyright (C) 2018-Present Shota Matsuda
-
 function nullify(modules) {
   return {
     resolveId(importee) {
       if (modules.includes(importee)) {
         return importee;
       }
+
       return null;
     },
 
@@ -16,8 +16,10 @@ function nullify(modules) {
       if (modules.includes(id)) {
         return 'export default null';
       }
+
       return null;
     }
+
   };
 }
 

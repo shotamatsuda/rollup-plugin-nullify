@@ -15,7 +15,7 @@ npm install @shotamatsuda/rollup-plugin-nullify
 
 ## License
 
-The MIT License
+MIT License
 
 Copyright (C) 2018-Present Shota Matsuda
 
